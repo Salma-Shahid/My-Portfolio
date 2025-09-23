@@ -110,7 +110,6 @@ nav ul li a:hover::after {
 .header-text p {
   font-size: 20px;
   margin-top: 20px;
-  line-height: 5px;
 }
 
 /* About */
@@ -412,6 +411,7 @@ form .btn2 {
   padding: 14px 60px;
   font-size: 18px;
   margin-top: 20px;
+  margin-bottom: 90px;
   cursor: pointer;
 }
 
@@ -422,8 +422,8 @@ form .btn2 {
   background: #262626;
   font-weight: 300;
   margin-top: 20px;
-  position: fixed;
-  bottom: 0;
+  /* position: fixed;
+  bottom: 0; */
 }
 
 /* --------------------CSS for small screen------------------------- */
