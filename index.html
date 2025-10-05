@@ -29,14 +29,16 @@
   <body>
     <!-- Navbar -->
     <nav class="navbar">
-      <img src="./image/logo.png" class="logo" alt="" />
-      <ul>
-        <li><a href="#home">Home</a></li>
+      <img src="./image/logo.png" class="logo" alt="logo" />
+      <ul id="sidemenu">
+        <li><a href="index.html">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
+        <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
       </ul>
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
     </nav>
     <div id="header">
       <div class="header-text">
@@ -133,17 +135,22 @@
             </div>
             <div class="tab-contents active-tab" id="skills">
               <ul>
-                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
-                <li><span>Web Development</span><br />Web App Development</li>
                 <li>
-                  <span>App Development</span><br />Building Android/ios Apps
+                  <span>UI/UX</span><br /><br />Designing Web/App interfaces
+                </li>
+                <li>
+                  <span>Web Development</span><br /><br />Web App Development
+                </li>
+                <li>
+                  <span>App Development</span><br /><br />Building Android/ios
+                  Apps
                 </li>
               </ul>
             </div>
             <div class="tab-contents" id="experience">
               <ul>
                 <li>
-                  <span>2025 - Current</span><br />Web & App Development
+                  <span>2025 - Current</span><br /><br />Web & App Development
                   Training at SMIT Institute
                 </li>
                 <!-- <li><span>Web Development</span><br>Web App Development</li>
@@ -323,6 +330,17 @@
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
       }
     </script>
   </body>
