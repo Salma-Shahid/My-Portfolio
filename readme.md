@@ -24,7 +24,7 @@ This portfolio was created for the **CodeAlpha Internship submission** and to de
 
 ## 🌐 Live Preview
 
-(Add your live link here if available)
+https://salmashahid-portfolio.netlify.app/
 
 ## 👩‍💻 Author
 
